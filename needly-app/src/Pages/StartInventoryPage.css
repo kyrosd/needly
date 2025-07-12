@@ -1,0 +1,46 @@
+.start-inventory-page {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(255, 166, 0, 0.77);
+}
+
+.start-inventory-page {
+    display: flex;
+    flex-direction: column;
+}
+
+.intro {
+    padding-top: 2%;
+    padding-left: 2%;
+    font-weight: 100;
+    font-size: 40px;
+}
+
+.highlight-in {
+    color: rgba(25, 97, 232, 1);
+}
+
+.button {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button-text {
+    height: 25%;
+    width: 45%;
+    background-color: rgba(255, 166, 0, 0.1);
+    font-weight: 100;
+    font-size: 40px;
+    text-align: center;
+    border: 1px solid;
+    color: rgba(0, 0, 0, 0.69);
+    border-color: rgba(0, 0, 0, 0.69);
+}
+
+.button-text:hover {
+    background-color: rgba(255, 166, 0, 0.40);
+    cursor: pointer;
+}
+
