@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import './MainPage.css';
 
 function MainPage() {
@@ -6,11 +7,11 @@ function MainPage() {
       <div className='header'>
         <h1 className='needly'>Needly</h1>
         <div className='nav'>
-          <a className='start-inventory' href="https://example.com">Start Inventory</a>
+          <Link className='start-inventory' to="/sign">Start Inventory</Link>
           <a className='find-inventory' href="#find">Find Inventory</a>
         </div>
       </div>
-      <div className='body'>
+      <div className='body-main'>
         No complex systems. No training needed. Just a clear, 
         public way to connect your needs with your communities 
         generosity.

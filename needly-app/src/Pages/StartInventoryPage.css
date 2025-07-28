@@ -28,8 +28,8 @@
 }
 
 .button-text {
-    height: 25%;
-    width: 45%;
+    height: 200px;
+    width: 530px;
     background-color: rgba(255, 166, 0, 0.1);
     font-weight: 100;
     font-size: 40px;

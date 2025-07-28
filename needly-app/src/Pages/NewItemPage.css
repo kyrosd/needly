@@ -1,0 +1,125 @@
+.new-header {
+    display: flex;
+    align-items: center;
+    border-bottom: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.25);
+    border-bottom-width: 1px;
+    height: 12%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+.new-needly {
+    font-size: 65px;
+    font-style: regular;
+    font-weight: 400;
+    background: linear-gradient(to bottom, #FD6262 43%, #1961E8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.new-item-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.new-items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 88%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.item-name-input {
+    background-color: rgba(238, 238, 238, 0.69);
+    height: 60px;
+    width: 500px;
+    border-radius: 30px;
+    border-style: none;
+    font-weight: 400;
+    font-size: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.69);
+    padding-left: 11px;
+}
+
+.item-description-input {
+    background-color: rgba(238, 238, 238, 0.69);
+    height: 150px;
+    width: 500px;
+    border-radius: 30px;
+    border-style: none;
+    font-weight: 400;
+    font-size: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.69);
+    padding-left: 11px;
+    padding-top: 11px;
+}
+
+.values-b {
+    display: flex;
+    height: 200px;
+    font-size: 25px;
+    justify-content: center;
+}
+.top-two {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    align-items: center;
+}
+
+.bottom-two {
+    display: flex;
+    gap: 22px;
+    text-align: center;
+    align-items: center;
+}
+
+.values-a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+}
+
+.add-leave {
+    display: flex;
+    gap: 70px;
+    font-size: 28px;
+}
+
+.cancel-link {
+    color: black;
+    text-decoration: none;
+}
+
+.cancel-link:hover {
+    cursor: pointer;
+    color: rgb(35, 97, 232);
+}
+
+.add-button {
+    background: rgba(0, 188, 28, 0.7);
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: white;
+    font-size: 20px;
+    height: 42px;
+    width: 120px; 
+    border-radius: 5px;
+}
+
+.add-button:hover {
+    background: rgba(0, 188, 28, 0.9);
+    cursor: pointer;
+}

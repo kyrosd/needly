@@ -4,6 +4,14 @@ import App from './App';
 import AboutPage from './Pages/AboutPage';
 import StartInventoryPage from './Pages/StartInventoryPage';
 import FindInventoryPage from './Pages/FindInventoryPage';
+import SignuUpPage from './Pages/SignUpPage';
+import LoginPage from './Pages/LoginPage';
+import MyInventory from './Pages/MyInventoriesPage';
+import ItemPage from './Pages/ItemPage';
+import NewItemsPage from './Pages/NewItemPage';
+import NewInventoryPage from './Pages/NewInventoryPage';
+import UpdateItemsPage from './Pages/UpdateItemPage';
+import UpdateInventoryPage from './Pages/UpdateInventoryPage';
 
 function AppRoute() {
   return (
@@ -12,6 +20,14 @@ function AppRoute() {
       <Route path="/about" element={<AboutPage />} />
       <Route path="/start" element={<StartInventoryPage />} />
       <Route path="/find" element={<FindInventoryPage />} />
+      <Route path="/sign" element={<SignuUpPage />} />
+      <Route path="/log" element={<LoginPage />} />
+      <Route path="/myInventory/:username" element={<MyInventory />} />
+      <Route path="/items/:inventoryId" element={<ItemPage />} />
+      <Route path="/newItems/:inventoryId" element={<NewItemsPage />} />
+      <Route path="/newInventory/:userId" element={<NewInventoryPage />} />
+      <Route path="/updateItem/:itemId" element={<UpdateItemsPage />} />
+      <Route path="/updateInventory/:inventoryId" element={<UpdateInventoryPage />} />
     </Routes>
   );
 }

@@ -42,4 +42,8 @@
 .inv-cards {
     height: 100%;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
 }

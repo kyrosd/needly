@@ -1,0 +1,113 @@
+.my-item-card {
+    display: flex;
+    flex-direction: column;
+    height: 295px;
+    width: 250px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .09); 
+}
+
+.my-item-card:hover {
+    background-color: rgba(36, 36, 36, 0.115);
+    cursor: pointer;
+    height: 299px;
+    width: 254px;
+}
+
+.my-item-head {
+    background-color: rgba(253, 98, 98, 1);
+    display: flex;
+    height: 20%;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.my-item-name {
+    
+    font-size: 19px;
+}
+
+.my-item-body {
+    background-color: rgba(65, 65, 65, 0.115);
+    border-top: none;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+}
+
+.my-item-descr {
+    padding: 20px;
+    font-weight: 100;
+    font-size: 16px;
+    text-align: center;
+}
+
+.amount-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+}
+
+.add-func {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.amount {
+    
+    font-size: 19px;
+}
+
+#count {
+    border: none;
+    background-color: rgba(253, 98, 98, 1);
+    font-size: 20px;
+}
+
+#count:hover {
+    cursor: pointer;
+    color: blue;
+}
+
+.delete-edit {
+    display: flex;
+    justify-content: end;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
+.trash {
+    height: 18px;
+    color: rgb(164, 164, 164);
+}
+
+.trash:hover {
+    cursor: pointer;
+    color: rgb(97, 97, 97);
+}
+
+.edit {
+    height: 18px;
+    color: rgb(164, 164, 164); 
+}
+
+.edit:hover {
+    cursor: pointer;
+    color: rgb(97, 97, 97);
+}
+
+.add {
+    height: 13px;
+    width: 13px;
+}
+
+.minus {
+    height: 13px;
+    width: 13px;
+}
