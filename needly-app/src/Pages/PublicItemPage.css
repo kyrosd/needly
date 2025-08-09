@@ -49,44 +49,19 @@
     height: 100%;
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap: 25px;
-    justify-content: start; 
-    align-content: start;   
+    grid-template-columns: repeat(3, 280px);
+    justify-content: center;
     overflow-y: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
     margin-top: 4%;
 }
 
-.values {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    height: 100%;
-    justify-content: start;
-    align-items: center;
-}
 
 
-#button-value {
-    width: 200px;
-    background: white;
-    height: 60px;
-    border-right: none;
-    padding: 0;
-    margin: 0;
-    border-bottom-color: rgba(0, 0, 0, 0.25);
-    border-bottom-width: 1px;
-    font-size: 18px;
-    border-top: none;
-    
-}
 
-#button-value:hover {
-    background-color: rgb(221, 221, 221);
-    cursor: pointer;
-    height: 70px;
-    font-size: 19px;
-}
+
 
 .user-item-name {
     font-weight: 100;

@@ -10,10 +10,16 @@ function ItemPage() {
     const [items, setItems] = useState([]);
     const [loading, setLoading] = useState(true);
     const navigate = useNavigate();
+    const [itemValue, setItemValue] = useState('');
+
+    const handleClick = (e) => {
+        setItemValue(e.target.value);
+        console.log(e.target.value);
+    };
 
     const handleDelete = async (id) => {
-      await DeleteItem(id); 
-     setItems((prevItems) => prevItems.filter(item => item.id !== id));
+        await DeleteItem(id);
+        setItems((prevItems) => prevItems.filter(item => item.id !== id));
     };
 
     const handleAdd = async (amount, id) => {
@@ -67,13 +73,31 @@ function ItemPage() {
 
             <div className='body'>
                 <div className='values'>
-                    <button className='high' id='button-value'>High Need</button>
-                    <button className='medium' id='button-value'>Medium Need</button>
-                    <button className='low' id='button-value'>Low Need</button>
-                    <button className='always' id='button-value'>Always Need</button>
+                    <button value='High Need' onClick={handleClick} className='high' id='button-value'>High Need</button>
+                    <button value='Medium Need' onClick={handleClick} className='medium' id='button-value'>Medium Need</button>
+                    <button value='Low Need' onClick={handleClick} className='low' id='button-value'>Low Need</button>
+                    <button value='Always Need' onClick={handleClick} className='always' id='button-value'>Always Need</button>
+                    <button value='' onClick={handleClick} className='allitems' id='button-value'>All Items</button>
                 </div>
                 {loading ? (
                     <div className="loading">Loading items...</div>
+                ) : (itemValue.length >= 1 ? (
+
+                    <div className="items">
+                        {items.filter(item => item.item_value == itemValue).map(item =>
+                            <ItemCard className="in"
+                                name={item.item_name}
+                                description={item.item_description}
+                                amount={item.item_amount}
+                                id={item.id}
+                                onDelete={handleDelete}
+                                onAdd={handleAdd}
+                                onMinus={handleMinus}
+                                value={item.item_value}
+                            />
+                        )}
+                    </div>
+
                 ) : (
                     <div className="items">
                         {items.map(item =>
@@ -85,12 +109,16 @@ function ItemPage() {
                                 onDelete={handleDelete}
                                 onAdd={handleAdd}
                                 onMinus={handleMinus}
+                                value={item.item_value}
                             />
                         )}
                     </div>
+                )
+
+
                 )}
             </div>
-        </div>
+        </div >
     );
 };
 

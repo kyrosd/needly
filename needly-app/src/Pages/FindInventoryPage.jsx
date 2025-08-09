@@ -8,6 +8,7 @@ function FindInventoryPage() {
   const [input, setInput] = useState('');
   const [users, setUsers] = useState([]);
 
+
   const handleChange = (e) => {
     setInput(e.target.value)
   };
@@ -34,16 +35,18 @@ function FindInventoryPage() {
       </div>
       <div className='inv-cards'>
         {input.length >= 1 ? (
-          users.slice(0, 3).map(user =>
-            user.username.toLowerCase().includes(input.toLowerCase()) ? (
-              <InventoryCard
+          users
+            .filter(user => user.username.toLowerCase().includes(input.toLowerCase()))
+            .slice(0, 3)
+            .map(user => (
+              <InventoryCard 
+                key={user.id}       
                 name={user.username}
               />
-            ) : null
-          )
+            ))
         ) : null}
-
       </div>
+
     </div>
   );
 }

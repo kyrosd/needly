@@ -12,6 +12,8 @@ import NewItemsPage from './Pages/NewItemPage';
 import NewInventoryPage from './Pages/NewInventoryPage';
 import UpdateItemsPage from './Pages/UpdateItemPage';
 import UpdateInventoryPage from './Pages/UpdateInventoryPage';
+import PublicInventoryPage from './Pages/PublicInventoryPage';
+import PublicItemPage from './Pages/PublicItemPage';
 
 function AppRoute() {
   return (
@@ -28,6 +30,8 @@ function AppRoute() {
       <Route path="/newInventory/:userId" element={<NewInventoryPage />} />
       <Route path="/updateItem/:itemId" element={<UpdateItemsPage />} />
       <Route path="/updateInventory/:inventoryId" element={<UpdateInventoryPage />} />
+      <Route path="/publicInventory/:username" element={<PublicInventoryPage />} />
+      <Route path="/publicItems/:inventoryId" element={<PublicItemPage />} />
     </Routes>
   );
 }

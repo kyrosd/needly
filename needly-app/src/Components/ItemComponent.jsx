@@ -4,8 +4,22 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { DeleteItem } from '../api/api';
 import { useNavigate } from 'react-router-dom';
 
-function ItemCard({ name, description, amount, id, onDelete, onAdd, onMinus }) {
+function ItemCard({ name, description, amount, id, onDelete, onAdd, onMinus, value }) {
     const navigate = useNavigate();
+    let className = '';
+
+    if (value === 'High Need') {
+        className = 'my-item-head-high'
+    } 
+    else if (value === 'Medium Need') {
+        className = 'my-item-head-med'
+    }
+    else if (value === 'Low Need') {
+        className = 'my-item-head-low'
+    } 
+    else if (value === 'Always Need') {
+        className = 'my-item-head-always'
+    };
 
     const updateItem = () => {
         navigate(`/updateItem/${id}`);
@@ -35,7 +49,7 @@ function ItemCard({ name, description, amount, id, onDelete, onAdd, onMinus }) {
 
     return (
         <div className="my-item-card">
-            <div className='my-item-head'>
+            <div className={className}>
                 <h1 className='my-item-name'>{name}</h1>
                 <div className='amount-section'>
                     <h1 className='amount'>{amount}</h1>

@@ -3,7 +3,7 @@
     flex-direction: column;
     height: 295px;
     width: 250px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.50);
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13);
 }
 
 .my-inv-card:hover {

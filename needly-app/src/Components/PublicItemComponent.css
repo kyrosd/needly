@@ -13,38 +13,8 @@
     width: 254px;
 }
 
-.my-item-head-high {
-    background-color: rgba(25, 97, 232, .70);
-    display: flex;
-    height: 20%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.my-item-head-med {
-    background-color: rgba(253, 98, 98, .90);
-    display: flex;
-    height: 20%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.my-item-head-low {
-    background-color: rgba(255, 196, 86, 0.90);
-    display: flex;
-    height: 20%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-}
-
-.my-item-head-always {
-    background-color: rgba(0, 188, 28, .60);
+.my-item-head {
+    background-color: rgba(253, 98, 98, .75);
     display: flex;
     height: 20%;
     justify-content: space-between;
@@ -55,7 +25,7 @@
 
 .my-item-name {
     
-    font-size: 15px;
+    font-size: 19px;
 }
 
 .my-item-body {
@@ -90,7 +60,7 @@
 
 .amount {
     
-    font-size: 15px;
+    font-size: 19px;
 }
 
 #count {

@@ -1,35 +1,39 @@
 .inv-card {
     display: flex;
     flex-direction: column;
-    height: 380px;
-    width: 310px;
+    height: 310px;
+    width: 270px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.18);
+}
+
+.inv-card:hover {
+    cursor: pointer;
+    background-color: rgba(87, 87, 87, 0.75);
 }
 
 .inv-head {
-    background-color: rgba(253, 98, 98, 1);
+    background-color: rgba(253, 98, 98, .78);
     display: flex;
-    height: 17%;
-    justify-content: center;
     align-items: center;
+    height: 23%;
 }
 
 .inv-name {
-    font-weight: 100;
-    font-size: 25px;
+    font-weight: 400;
+    font-size: 23px;
+    padding-left: 5%;
 }
 
-.inv-body {
-    background-color: rgba(255, 255, 255, 0.70);
-    border-top: none;
-    height: 83%;
+.users-img {
+    height: 90%;
+    width: 100%;
+    color: rgba(205, 205, 205, 0.75);
+}
+
+.user-img {
+    background-color: rgba(255, 255, 255, .75);
     display: flex;
-    justify-content: center;
-
-}
-
-.inv-descr {
-    padding: 20px;
-    font-weight: 100;
-    font-size: 18px;
-    text-align: center;
+    height: 77%;
+    width: 100%;
+    align-items: end;
 }
