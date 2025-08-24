@@ -1,4 +1,4 @@
-.my-item-card {
+/* .my-item-card {
     display: flex;
     flex-direction: column;
     height: 295px;
@@ -8,7 +8,7 @@
 
 .my-item-card:hover {
     background-color: rgba(36, 36, 36, 0.115);
-    cursor: pointer;
+    cursor: pointer; 
     height: 299px;
     width: 254px;
 }
@@ -110,4 +110,4 @@
 .minus {
     height: 13px;
     width: 13px;
-}
+} */

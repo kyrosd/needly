@@ -52,10 +52,7 @@ export async function GetItems(inventoryId) {
 export async function CreateItems(data) {
     const response = await fetch(`http://127.0.0.1:8000/api/item/`, {
         method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(data)
+        body: data
     });
 
     if (!response.ok) {

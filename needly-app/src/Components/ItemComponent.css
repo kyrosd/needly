@@ -1,84 +1,83 @@
 .my-item-card {
     display: flex;
     flex-direction: column;
-    height: 295px;
-    width: 250px;
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .09); 
+    height: 450px;
+    width: 350px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .10);  
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.30);
 }
 
 .my-item-card:hover {
     background-color: rgba(36, 36, 36, 0.115);
     cursor: pointer;
-    height: 299px;
-    width: 254px;
+    height: 453px;
+    width: 353px;
+}
+
+.item-color {
+    height: 5%;
+    width: 100%;
 }
 
 .my-item-head-high {
     background-color: rgba(25, 97, 232, .70);
-    display: flex;
-    height: 20%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 .my-item-head-med {
-    background-color: rgba(253, 98, 98, .90);
-    display: flex;
-    height: 20%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    background-color: rgba(253, 98, 98, .80);
+     border-radius: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 .my-item-head-low {
     background-color: rgba(255, 196, 86, 0.90);
-    display: flex;
-    height: 20%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 .my-item-head-always {
     background-color: rgba(0, 188, 28, .60);
-    display: flex;
-    height: 20%;
-    justify-content: space-between;
-    align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
+    border-radius: 50px;
+    height: 30px;
+    width: 30px;
 }
 
 .my-item-name {
-    
-    font-size: 15px;
+    font-size: 22px;
+    color: rgba(61, 61, 61, 0.7);
 }
 
 .my-item-body {
     background-color: rgba(65, 65, 65, 0.115);
     border-top: none;
-    height: 80%;
+    height: 50%;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
 
 }
 
 .my-item-descr {
-    padding: 20px;
     font-weight: 100;
     font-size: 16px;
+    width: 90%;
     text-align: center;
+    color: rgba(61, 61, 61, 0.9);
+}
+
+.description-section {
+    display: flex;
+    height: 25%;
+    justify-content: center;
 }
 
 .amount-section {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 14px;
 }
 
@@ -89,8 +88,8 @@
 }
 
 .amount {
-    
-    font-size: 15px;
+    color: rgba(61, 61, 61, 0.7);
+    font-size: 20px;
 }
 
 #count {
@@ -104,40 +103,69 @@
     color: blue;
 }
 
-.delete-edit {
+.item-delete-edit {
     display: flex;
-    justify-content: end;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    gap: 20px;
+    gap: 30px;
 }
 
-.trash {
-    height: 18px;
-    color: rgb(164, 164, 164);
+.item-trash {
+    height: 20px;
+    color: rgba(61, 61, 61, 0.7);
 }
 
-.trash:hover {
+.item-trash:hover {
     cursor: pointer;
-    color: rgb(97, 97, 97);
+    color: blue;
 }
 
-.edit {
-    height: 18px;
-    color: rgb(164, 164, 164); 
+.item-edit {
+    height: 20px;
+    color: rgba(61, 61, 61, 0.7); 
 }
 
-.edit:hover {
+.item-edit:hover {
     cursor: pointer;
-    color: rgb(97, 97, 97);
+    color: blue;
 }
 
 .add {
     height: 13px;
     width: 13px;
+    color: rgba(61, 61, 61, 0.7);
 }
 
 .minus {
     height: 13px;
     width: 13px;
+    color: rgba(61, 61, 61, 0.7);
+}
+
+.item-img-place {
+    display: flex;
+    height: 50%;
+    width: 100;
+    align-items: center;
+    justify-content: center;
+}
+
+.item-img {
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.25);
+}
+
+
+.name-amount {
+    height: 15%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.delete-color {
+    height: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

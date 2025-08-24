@@ -2,23 +2,21 @@
     display: flex;
     flex-direction: column;
     height: 295px;
-    width: 250px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.13);
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgba(253, 98, 98, .90);
 }
 
 .my-inv-card:hover {
-    background-color: rgba(36, 36, 36, 0.115);
     cursor: pointer;
     height: 299px;
-    width: 254px;
+    width: 305px;
 }
 
 .my-inv-head {
-    background-color: rgba(253, 98, 98, 1);
     display: flex;
-    height: 20%;
-    justify-content: center;
-    align-items: center;
+    height: 12.5%;
+    
 }
 
 .my-inv-name {
@@ -26,12 +24,13 @@
 }
 
 .my-inv-body {
-    background-color: rgba(65, 65, 65, 0.115);
     border-top: none;
-    height: 80%;
+    height: 12.5%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .my-inv-descr {
@@ -50,8 +49,8 @@
 }
 
 .trash {
-    height: 18px;
-    color: rgb(164, 164, 164);
+    height: 13px;
+    color: rgb(0, 0, 0);
 }
 
 .trash:hover {
@@ -60,8 +59,8 @@
 }
 
 .edit {
-    height: 18px;
-    color: rgb(164, 164, 164); 
+    height: 13px;
+    color: rgb(0, 0, 0); 
 }
 
 .edit:hover {

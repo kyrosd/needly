@@ -42,6 +42,7 @@
     font-size: 10px;
 }
 
+
 .cancel-create-box {
     display: flex;
     gap: 70px;
@@ -54,6 +55,11 @@
     text-decoration: none;
 }
 
+.cancel:hover {
+    color: rgb(132, 0, 255, .40);
+    cursor: pointer;
+}
+
 .create {
     background: none;
     border: none;
@@ -64,6 +70,7 @@
 }
 
 .create:hover {
+    color: rgb(132, 0, 255, .40);
     cursor: pointer;
 }
 

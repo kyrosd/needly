@@ -43,7 +43,7 @@ function MyInventory() {
                     <h1 className='new-needly'>Needly</h1>
                 </div>
                 <div className='two'>
-                    <h1 className='user-inv-name'>{username} Inventories</h1>
+                    <h1 className='user-inv-name'>My Inventories</h1>
                 </div>
                 <div className='three'>
                     <button className='add-inv' onClick={handlClick}>Add Inventory</button>

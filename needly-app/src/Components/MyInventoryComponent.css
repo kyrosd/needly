@@ -1,37 +1,51 @@
-.my-inv-card {
+.inventory-card {
     display: flex;
     flex-direction: column;
-    height: 295px;
-    width: 250px;
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.50);
+    height: 320px;
+    width: 300px;
+    border-radius: 10px;
+    background-color: rgba(253, 98, 98, .90);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, .25); 
+}
+
+.inventory-card:hover {
+    cursor: pointer;
+    height: 325px;
+    width: 305px;
+}
+
+.inv-img-place {
+    display: flex;
+    height: 75%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inv-img {
+    height: 95%;
+    width: 95%;
+    border-radius: 10px;
 }
 
 .my-inv-card:hover {
-    background-color: rgba(36, 36, 36, 0.115);
     cursor: pointer;
     height: 299px;
     width: 254px;
 }
 
-.my-inv-head {
-    background-color: rgba(253, 98, 98, 1);
-    display: flex;
-    height: 20%;
-    justify-content: center;
-    align-items: center;
-}
-
-.my-inv-name {
+.inv-name {
+    color: rgb(77, 77, 77, .70);
     font-size: 19px;
 }
 
-.my-inv-body {
-    background-color: rgba(65, 65, 65, 0.115);
+.inv-body {
+    width: 90%;
     border-top: none;
-    height: 80%;
+    height: 25%;
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
+    justify-content: space-evenly;
 }
 
 .my-inv-descr {
@@ -41,30 +55,28 @@
     text-align: center;
 }
 
-.delete-edit {
+.my-delete-edit {
     display: flex;
     justify-content: end;
-    padding-right: 10px;
-    padding-bottom: 10px;
-    gap: 20px;
+    gap: 10px;
 }
 
-.trash {
-    height: 18px;
-    color: rgb(164, 164, 164);
+.inv-trash {
+    height: 15px;
+    color: rgb(77, 77, 77, .70);
 }
 
-.trash:hover {
+.inv-trash:hover {
     cursor: pointer;
     color: rgb(97, 97, 97);
 }
 
-.edit {
-    height: 18px;
-    color: rgb(164, 164, 164); 
+.inv-edit {
+    height: 15px;
+    color: rgb(77, 77, 77, .70); 
 }
 
-.edit:hover {
+.inv-edit:hover {
     cursor: pointer;
     color: rgb(97, 97, 97);
 }

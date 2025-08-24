@@ -48,7 +48,7 @@
 .inventories {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(3, 280px);
+    grid-template-columns: repeat(3, 300px);
     justify-content: center;
     height: 88%;
     overflow-y: auto;

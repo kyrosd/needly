@@ -34,6 +34,7 @@
     width: 33%;
     height: 100%;
     align-items: center;
+    gap: 25px;
 }
 
 .new-needly {
@@ -47,12 +48,11 @@
 
 .items {
     height: 100%;
-    width: 80%;
+    width: 90%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
     gap: 25px;
-    justify-content: start; 
-    align-content: start;   
+    justify-content: center; 
     overflow-y: auto;
     margin-top: 4%;
 }
@@ -66,47 +66,47 @@
     align-items: center;
 }
 
-
-#button-value {
-    width: 200px;
-    background: white;
-    height: 60px;
-    border-right: none;
-    padding: 0;
-    margin: 0;
-    border-bottom-color: rgba(0, 0, 0, 0.25);
-    border-bottom-width: 1px;
-    font-size: 18px;
-    border-top: none;
-    
-}
-
-#button-value:hover {
-    background-color: rgb(221, 221, 221);
-    cursor: pointer;
-    height: 70px;
-    font-size: 19px;
-}
-
 .user-item-name {
     font-weight: 100;
     font-size: 25px;
 }
 
 .add-item {
-    background: rgba(0, 188, 28, 0.7);
+    background: rgb(255, 255, 255);
     border: none;
     padding: 0;
     margin: 0;
-    color: white;
-    font-size: 14px;
-    height: 42px;
-    width: 120px; 
-    border-radius: 5px;
+    color: rgb(123, 123, 123);
+    font-size: 18px;
+}
+
+.filter {
+    background: rgb(255, 255, 255);
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(123, 123, 123);
+    font-size: 18px;
+}
+
+.filter:hover {
+    cursor: pointer;
+}
+
+.account {
+    background: rgb(255, 255, 255);
+    border: none;
+    padding: 0;
+    margin: 0;
+    color: rgb(123, 123, 123);
+    font-size: 18px;
+}
+
+.account:hover {
+    cursor: pointer;
 }
 
 .add-item:hover {
-    background: rgba(0, 188, 28, 0.9);
     cursor: pointer;
 }
 
@@ -115,6 +115,7 @@
     width: 100%;
     display: flex;
     height: 88%;
+    justify-content: center;
 }
 
 .loading {
@@ -128,3 +129,50 @@
   justify-content: center;
 }
 
+.item-about {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 100%;
+    justify-content: start;
+    align-items: center;
+    border-left: solid;
+    border-left-color: rgba(0, 0, 0, 0.25);
+    border-left-width: 1px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background: white;
+  min-width: 160px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-radius: 6px;
+  overflow: hidden;
+  z-index: 10;
+}
+
+.dropdown-content button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background: white;
+  text-align: left;
+  cursor: pointer;
+}
+
+.dropdown-content button:hover {
+  background: #f1f1f1;
+}
+
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}

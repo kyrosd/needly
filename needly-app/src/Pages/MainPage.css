@@ -33,8 +33,18 @@
     color: rgba(25, 97, 232, 3);
 }
 
+.start-inventory:hover{
+    color: rgb(132, 0, 255, .40);
+    cursor: pointer;
+}
+
 .find-inventory {
     color: rgba(0, 0, 0, 1)
+}
+
+.find-inventory:hover {
+    color: rgb(132, 0, 255, .40);
+    cursor: pointer;
 }
 
 .body-main {
